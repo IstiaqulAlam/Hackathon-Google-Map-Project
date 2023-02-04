@@ -11,7 +11,7 @@ let markers = [];
 
 let vab = {
   garages : ["Parking Garage I", "Parking Garage I", "Parking Garage I"],
-  lots : ["H2 parking", "H2 Parking", "H4 Parking"],
+  lots : ["H2 parking", "H2 Parking", "H4 Parking UCF"],
   //d : 'H4 parking',
   //b : 'H2 parking',
   //c : 'H2 parking',
