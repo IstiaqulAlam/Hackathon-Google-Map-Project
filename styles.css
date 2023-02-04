@@ -1,0 +1,149 @@
+body {
+    background-color: #000;
+    color: #f6b503;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    font-size: 22px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    background-color: gray;
+    height: 55px;
+    text-align: right;
+    border-style: none;
+}
+li a{
+    color: #f6b503;
+    line-height: 55px;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+.navbar {
+    display: inline-block;
+    background-color: gray;
+}
+.navbar:hover {
+    background-color: rgb(98, 97, 97);
+}
+
+.headings {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 60px;
+    text-align: center;
+    color: #f6b503;
+}
+#subTitle {
+    color: gray;
+    margin-top: 10px;
+}
+#siteTitle {
+    font-size: 130px;
+    margin-top: 100px;
+    text-shadow: 5px 5px gray;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#belowTitle {
+    margin-top: 50px;
+}
+
+.homeImage {
+    float: left;
+    width:  400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.imageText{
+    text-align: center;
+}
+
+.transition-fade {
+    transition: 500ms;
+    opacity: 1;
+  }
+  
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.span {
+    display: inline-block;
+    width: 1001px;
+    height: 901px;
+}
+
+#map {
+    height: 600px;
+    width: 600px;
+    margin-left: 30%;
+    display: inline-block;
+  }
+
+#mainmap {
+    margin: auto;
+    height: 600px;
+    width: 600px;
+}
+
+#submitButton {
+    vertical-align: top;
+    height: 55px;
+    width: 80px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f6b503;
+    border-style: none;
+}
+
+.btn-group button {
+    background-color: #f6b503; /* Green background */
+    border: 1px solid black; /* Green border */
+    color: black; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 50%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #c39002;
+  }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Project</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;1,700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;1,700&family=Poppins:wght@400;700&display=swap');
+    </style>
+    <!--<script defer src="https://unpkg.com/swup@3"></script>-->
+    <script type="module" src="./index.js"></script>
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <ul>
+        <li class="navbar"><a href="index.html">Home</a></li>
+        <li class="navbar"><a href="demo.html">Parking</a></li>
+    </ul>
+    <div id="swup" class="transition-fade">
+    <h1 class="headings">Find Nearby Parking</h1>
+    <div id="map"></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPIPh7jRUK-YW-ZufrQgfjbZNRwLVauZ0&callback=initMap&libraries=places&v=weekly"
+      defer
+    ></script>
+    <span> 
+        <div class="dropdown">
+            <ul>
+                <li class="dropbtn">Permits</li>
+                <div class="btn-group dropdown-content">
+                <button onclick = "setPermit(2)">D</button>
+                <button onclick = "setPermit(3)">R</button>
+                <button onclick = "setPermit(0)">B</button>
+                <button onclick = "setPermit(1)">C</button>
+                <button onclick = "setPermit(4)">Towers</button>
+                </div>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <ul>
+                <li class="dropbtn">Building</li>
+                <div class="btn-group dropdown-content">
+                <button onclick = "setBuilding('vab')">VAB</button>
+                <button onclick = "setBuilding('eng2')">ENG2</button>
+                </div>
+            </ul>
+          </div>
+          <button id="submitButton" onclick="nearestGarage()">Search Garages</button>
+          <button id="submitButton" onclick="nearestLot()">Search Lots</button>
+    </span>
+    <div>
+        
+    </div>
+    </div>
+</body>
+</html>
